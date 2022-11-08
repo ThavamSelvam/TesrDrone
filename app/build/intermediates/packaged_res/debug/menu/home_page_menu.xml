@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/radio_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_miscellaneous_services_24"
+        android:title="@string/service" />
+
+    <item
+        android:id="@+id/profile_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_manage_accounts_24"
+        android:title="@string/profile" />
+</menu>

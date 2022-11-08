@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_home_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_manage_accounts_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_manage_accounts_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_house.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/house.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_support.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/support.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_send_to_mobile_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_send_to_mobile_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_add_location_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_add_location_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_fragment_home.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_item_booked_deatails_tiles.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/item_booked_deatails_tiles.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_arrow_back_ios_new_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_arrow_back_ios_new_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/menu_home_help_menu.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/menu/home_help_menu.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_merge_type_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_merge_type_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_customer_service.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/customer_service.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-pngs-38:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_inner_activity.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/inner_activity.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_fragment_service.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/fragment_service.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_activity_booking.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/activity_booking.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_help_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_help_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.project.dronedemo.app-merged_res-43:/layout_item_booked_deatails_tiles.xml.flat",
+        "source": "com.project.dronedemo.app-main-45:/layout/item_booked_deatails_tiles.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_activity_phone_number.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/activity_phone_number.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_ondemand_video_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_ondemand_video_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_activity_otp_verification.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/activity_otp_verification.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_call_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_call_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_presentation.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/presentation.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_item_home_tiles.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/item_home_tiles.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_bookmarks_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_bookmarks_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_miscellaneous_services_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_miscellaneous_services_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_next_page.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/next_page.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_military_tech_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_military_tech_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_crop_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_crop_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_drones_s.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/drones_s.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_activity_splash.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_perm_media_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_perm_media_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_fragment_profile.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_activity_dashboard.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/xml_backup_rules.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/menu_home_page_menu.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/menu/home_page_menu.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/layout_fragment_blank.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/layout/fragment_blank.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_ic_baseline_date_range_24.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/ic_baseline_date_range_24.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_backgroung_border.xml.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/backgroung_border.xml"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_drones_splash.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/drones_splash.png"
+    },
+    {
+        "merged": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-merged_res-43:/drawable_cart.png.flat",
+        "source": "/Users/tganesa3/.gradle/daemon/7.3.3/com.project.dronedemo.app-main-45:/drawable/cart.png"
+    }
+]

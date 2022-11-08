@@ -1,0 +1,223 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.project.dronedemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:6:5-65
+11-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:6:22-62
+12
+13    <uses-feature android:name="android.hardware.camera" />
+13-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:8:5-60
+13-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:8:19-57
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:11:5-70
+16-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:11:22-67
+17    <uses-permission android:name="android.permission.READ_SMS" />
+17-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:12:5-67
+17-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.SEND_SMS" />
+18-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:13:5-67
+18-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->[com.wdullaer:materialdatetimepicker:4.2.3] /Users/tganesa3/.gradle/caches/transforms-3/1ef79596989464fb706749c1089e9ef2/transformed/materialdatetimepicker-4.2.3/AndroidManifest.xml:26:5-66
+19-->[com.wdullaer:materialdatetimepicker:4.2.3] /Users/tganesa3/.gradle/caches/transforms-3/1ef79596989464fb706749c1089e9ef2/transformed/materialdatetimepicker-4.2.3/AndroidManifest.xml:26:22-63
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+22        android:name="com.project.dronedemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.project.dronedemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:15:5-71:19
+28        android:allowBackup="true"
+28-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:16:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] /Users/tganesa3/.gradle/caches/transforms-3/bf7436fc5c6d4e7f072e783feaa80ac3/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:17:9-65
+31        android:debuggable="true"
+32        android:fullBackupContent="@xml/backup_rules"
+32-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:18:9-54
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:19:9-43
+34        android:label="@string/app_name"
+34-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:20:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:21:9-54
+36        android:screenOrientation="sensorPortrait"
+36-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:22:9-51
+37        android:supportsRtl="true"
+37-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:23:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.AppCompat.NoActionBar" >
+39-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:24:9-59
+40        <activity
+40-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:26:9-28:75
+41            android:name="com.project.dronedemo.view.booking.BookingActivity"
+41-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:27:13-57
+42            android:exported="false"
+42-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:28:13-37
+43            android:theme="@style/NoActionBar" />
+43-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:28:39-73
+44        <activity
+44-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:29:9-35:20
+45            android:name="com.project.dronedemo.view.dashboard.DashboardActivity"
+45-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:30:13-61
+46            android:exported="true"
+46-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:31:13-36
+47            android:screenOrientation="sensorPortrait"
+47-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:32:13-55
+48            android:theme="@style/NoActionBar" >
+48-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:33:13-47
+49        </activity>
+50        <activity
+50-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:36:9-39:58
+51            android:name="com.project.dronedemo.view.homeinnerlist.InnerActivity"
+51-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:37:13-61
+52            android:exported="false"
+52-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:38:13-37
+53            android:screenOrientation="sensorPortrait" />
+53-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:39:13-55
+54        <activity
+54-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:40:9-43:58
+55            android:name="com.project.dronedemo.view.bookedlist.BookedListActivity"
+55-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:41:13-63
+56            android:exported="false"
+56-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:42:13-37
+57            android:screenOrientation="sensorPortrait" />
+57-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:43:13-55
+58        <activity
+58-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:44:9-47:58
+59            android:name="com.project.dronedemo.view.enternumber.PhoneNumberActivity"
+59-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:45:13-65
+60            android:exported="false"
+60-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:46:13-37
+61            android:screenOrientation="sensorPortrait" />
+61-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:47:13-55
+62        <activity
+62-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:48:9-51:58
+63            android:name="com.project.dronedemo.view.otpverification.OtpVerificationActivity"
+63-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:49:13-73
+64            android:exported="false"
+64-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:50:13-37
+65            android:screenOrientation="sensorPortrait" />
+65-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:51:13-55
+66        <activity
+66-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:52:9-61:20
+67            android:name="com.project.dronedemo.view.splash.SplashScreenActivity"
+67-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:53:13-61
+68            android:exported="true"
+68-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:54:13-36
+69            android:screenOrientation="sensorPortrait" >
+69-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:55:13-55
+70            <intent-filter>
+70-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:56:13-60:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:57:17-69
+71-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:57:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:59:17-77
+73-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:59:27-74
+74            </intent-filter>
+75        </activity>
+76
+77        <receiver
+77-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:63:9-70:20
+78            android:name="com.project.dronedemo.otplistener.AppSMSBroadcastReceiver"
+78-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:64:13-64
+79            android:exported="true"
+79-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:65:13-36
+80            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+80-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:66:13-87
+81            <intent-filter>
+81-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:67:13-69:29
+82                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+82-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:68:17-94
+82-->/Users/tganesa3/AndroidStudioProjects/Dronedemo/app/src/main/AndroidManifest.xml:68:25-91
+83            </intent-filter>
+84        </receiver>
+85
+86        <activity
+86-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:23:9-27:75
+87            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+87-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:24:13-93
+88            android:excludeFromRecents="true"
+88-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:25:13-46
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:26:13-37
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:27:13-72
+91        <!--
+92            Service handling Google Sign-In user revocation. For apps that do not integrate with
+93            Google Sign-In, this service will never be started.
+94        -->
+95        <service
+95-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:33:9-37:51
+96            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+96-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:34:13-89
+97            android:exported="true"
+97-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:35:13-36
+98            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+98-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:36:13-107
+99            android:visibleToInstantApps="true" />
+99-->[com.google.android.gms:play-services-auth:20.3.0] /Users/tganesa3/.gradle/caches/transforms-3/bf0d9e6e71dd2d67ef2255b97ca21c0b/transformed/play-services-auth-20.3.0/AndroidManifest.xml:37:13-48
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:18.0.1] /Users/tganesa3/.gradle/caches/transforms-3/8e57bc8913eeeaa6f89ae7bdcc651225/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:18.0.1] /Users/tganesa3/.gradle/caches/transforms-3/8e57bc8913eeeaa6f89ae7bdcc651225/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:18.0.1] /Users/tganesa3/.gradle/caches/transforms-3/8e57bc8913eeeaa6f89ae7bdcc651225/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:18.0.1] /Users/tganesa3/.gradle/caches/transforms-3/8e57bc8913eeeaa6f89ae7bdcc651225/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+105
+106        <meta-data
+106-->[com.google.android.gms:play-services-basement:18.1.0] /Users/tganesa3/.gradle/caches/transforms-3/35b25b86bfa3e345524c80d4c46b2007/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+107            android:name="com.google.android.gms.version"
+107-->[com.google.android.gms:play-services-basement:18.1.0] /Users/tganesa3/.gradle/caches/transforms-3/35b25b86bfa3e345524c80d4c46b2007/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+108            android:value="@integer/google_play_services_version" />
+108-->[com.google.android.gms:play-services-basement:18.1.0] /Users/tganesa3/.gradle/caches/transforms-3/35b25b86bfa3e345524c80d4c46b2007/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+109
+110        <provider
+110-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+111            android:name="androidx.startup.InitializationProvider"
+111-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+112            android:authorities="com.project.dronedemo.androidx-startup"
+112-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+113            android:exported="false" >
+113-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+114            <meta-data
+114-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+115-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+116                android:value="androidx.startup" />
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/tganesa3/.gradle/caches/transforms-3/5599effd9ad40bca005e593cdd894a89/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+117            <meta-data
+117-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tganesa3/.gradle/caches/transforms-3/b1620bace8a059a8fba1f86b24b9b083/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+118                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+118-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tganesa3/.gradle/caches/transforms-3/b1620bace8a059a8fba1f86b24b9b083/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+119                android:value="androidx.startup" />
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tganesa3/.gradle/caches/transforms-3/b1620bace8a059a8fba1f86b24b9b083/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+120        </provider>
+121    </application>
+122
+123</manifest>

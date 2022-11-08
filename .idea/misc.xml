@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../.gradle/caches/transforms-3/d1aeecdd34c74dff9ab4d66116e01b6a/transformed/OtpView-v1.1.2/res/drawable/bg_pin.xml" value="0.1325" />
+        <entry key="app/src/main/res/layout/activity_booking.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.3493975903614458" />
+        <entry key="app/src/main/res/layout/activity_otp_verification.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_phone_number.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.38838709677419353" />
+        <entry key="app/src/main/res/layout/fragment_service.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/inner_activity.xml" value="0.18541666666666667" />
+        <entry key="app/src/main/res/layout/item_home_tiles.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/menu/home_help_menu.xml" value="0.24270833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

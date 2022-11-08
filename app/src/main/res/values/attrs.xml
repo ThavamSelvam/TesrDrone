@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SuperBottomBar">
+        <attr name="sbb_menu" format="reference" />
+        <attr name="sbb_iconMargin" format="dimension" />
+        <attr name="sbb_textSize" format="dimension" />
+        <attr name="sbb_iconSize" format="dimension" />
+        <attr name="sbb_initialActiveItem" format="integer" />
+        <attr name="sbb_textColor" format="color" />
+        <attr name="sbb_backgroundColor" format="color" />
+        <attr name="sbb_activeColor" format="color" />
+        <attr name="sbb_passiveColor" format="color" />
+        <attr name="sbb_pressedColor" format="color" />
+        <attr name="sbb_animationDuration" format="integer" />
+        <attr name="sbb_scalePercent" format="integer" />
+    </declare-styleable>
+
+</resources>

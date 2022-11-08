@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Dronedemo</string>
+    <string name="welcome">Welcome</string>
+    <string name="fill_the_form">Enter your mobile number to become our guest</string>
+    <string name="country_code">+91</string>
+    <string name="enter_mobile_number">Please enter your mobile number</string>
+    <string name="next">Next</string>
+    <string name="verification">Verification</string>
+    <string name="we_send_sms">We sent you an SMS code</string>
+    <string name="on_number">On Number +91</string>
+    <string name="code_not_send">Resend OTP again</string>
+    <string name="home">Home</string>
+    <string name="service">Service</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="type">Type</string>
+    <string name="location">Location</string>
+    <string name="pincode">Pin code</string>
+    <string name="drones">Drones</string>
+    <string name="crop_input_selection">Crop input selection</string>
+    <string name="tools_tech">Tools &amp; Technology</string>
+    <string name="market_place">Market place</string>
+    <string name="media">Media</string>
+    <string name="submit">Submit</string>
+    <string name="buy">Buy</string>
+    <string name="rent">Rent or Lease</string>
+    <string name="traing">Training &amp; Consulting</string>
+    <string name="book_service">Book/Reserve</string>
+    <string name="service_and_repair">Service &amp; Repair</string>
+    <string name="video">Video</string>
+    <string name="read_blog">Read Blog</string>
+    <string name="chat">Whats app</string>
+    <string name="please_enter_number">Please enter mobile number</string>
+    <string name="please_enter_number_ten_digit">Please enter 10 digit mobile number</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="please_enter_valid_otp">Please enter valid otp</string>
+    <string name="help">Help coming soon</string>
+    <string name="book_drone">Book Drone</string>
+    <string name="date_from">Date from</string>
+    <string name="date_to">Date to</string>
+    <string name="address">Address</string>
+    <string name="acre">Acre</string>
+    <string name="please_enter_user_name">Please enter name</string>
+    <string name="please_enter_date_from">Please select Date from</string>
+    <string name="please_enter_date_to">Please select Date to</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="please_enter_area">Please enter acre</string>
+    <string name="date_saved">Data saved successfully</string>
+
+
+</resources>
