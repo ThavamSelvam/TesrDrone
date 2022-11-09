@@ -60,7 +60,7 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
             }
             saveToPref()
         }
-        binding.grpDateFrom.setOnClickListener {
+        binding.consDateFrom.setOnClickListener {
             isDateFromClicked = true
             callDatePicker()
         }

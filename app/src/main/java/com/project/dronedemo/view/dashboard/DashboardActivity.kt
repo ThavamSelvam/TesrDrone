@@ -1,5 +1,7 @@
 package com.project.dronedemo.view.dashboard
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -18,12 +20,16 @@ import com.project.dronedemo.view.service.ServiceFragment
 
 class DashboardActivity : BaseActivity() {
     lateinit var appBarLayout: Toolbar
+    lateinit var sharedPreferences: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         appBarLayout=findViewById(R.id.appbar)
         setSupportActionBar(appBarLayout);
-
+        sharedPreferences =  getSharedPreferences("appname", Context.MODE_PRIVATE)!!
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.putBoolean("USERLOGIN",true)
         val bottomBar: SuperBottomBar = findViewById(R.id.bottomBar)
          replaceFragment(0)
         bottomBar.setOnItemSelectListener(object : OnItemSelectedListener {

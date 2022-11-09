@@ -1,5 +1,6 @@
 package com.project.dronedemo.view.enternumber
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -10,14 +11,17 @@ import androidx.lifecycle.ViewModelProvider
 import com.project.dronedemo.R
 import com.project.dronedemo.databinding.ActivityPhoneNumberBinding
 import com.project.dronedemo.utils.Constant
+import com.project.dronedemo.utils.PermissionHelper
 import com.project.dronedemo.view.base.BaseActivity
 import com.project.dronedemo.view.otpverification.OtpVerificationActivity
 
-class PhoneNumberActivity : BaseActivity() {
+
+class PhoneNumberActivity : BaseActivity(), PermissionHelper.PermissionCallback {
     lateinit var phoneNumberViewModel: PhoneNumberViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_phone_number)
+
         val binding: ActivityPhoneNumberBinding =
             DataBindingUtil.setContentView(this@PhoneNumberActivity, R.layout.activity_phone_number)
         phoneNumberViewModel =
@@ -36,10 +40,20 @@ class PhoneNumberActivity : BaseActivity() {
 
             override fun afterTextChanged(p0: Editable?) {
                 if (p0?.length == 10) {
-                    phoneNumberViewModel.onNextClick()
+                    if (PermissionHelper.getInstance()!!.isAvailableAllPermission())
+                        phoneNumberViewModel.onNextClick()
+                    else askPermission()
                 }
             }
         })
+
+        askPermission()
+
+    }
+
+      fun askPermission() {
+        PermissionHelper.getInstance()!!.with(this).setListener(this)
+            .askPermission(Manifest.permission.SEND_SMS)
     }
 
     private fun loadLiveDataModel() {
@@ -48,23 +62,27 @@ class PhoneNumberActivity : BaseActivity() {
         })
     }
 
-
     override fun onRequestPermissionsResult(
         requestCode: Int,
-        permissions: Array<String>,
+        permissions: Array<String?>,
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        PermissionHelper.getInstance()?.onPermissionRequestResult(requestCode, permissions, grantResults)
+    }
+    override fun onPermissionGranted() {
+     /*   startActivity(
+            Intent(
+                this@PhoneNumberActivity,
+                OtpVerificationActivity::class.java
+            ).putExtra(Constant.MOBILE_NUMBER, phoneNumberViewModel.phoneNumber.get()))*/
+    }
 
-        if (requestCode == 12) {
-            if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startActivity(
-                    Intent(
-                        this@PhoneNumberActivity,
-                        OtpVerificationActivity::class.java
-                    ).putExtra(Constant.MOBILE_NUMBER, phoneNumberViewModel.phoneNumber.get())
-                )
-            }
-        }
+    override fun onNeverAskAgainPermission(runtimePermissionDenied: Boolean) {
+          showBottomToast(getString(R.string.user_should_enable_sms_permission))
+    }
+
+    override fun onDenied() {
+        askPermission()
     }
 }

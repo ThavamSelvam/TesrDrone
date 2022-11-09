@@ -47,6 +47,7 @@
     <string name="please_enter_address">Please enter address</string>
     <string name="please_enter_area">Please enter acre</string>
     <string name="date_saved">Data saved successfully</string>
+    <string name="user_should_enable_sms_permission">User should enable SMS permission</string>
 
 
 </resources>

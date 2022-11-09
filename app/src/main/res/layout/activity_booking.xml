@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="activity"
+            type="com.project.dronedemo.view.booking.BookingActivity" />
 
         <variable
             name="viewModel"

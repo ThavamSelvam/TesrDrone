@@ -33,12 +33,19 @@ class BookedListActivity : BaseActivity(), BookedListGridAdapter.OnClickEvent {
 
         val gson = Gson()
         val type: Type = object : TypeToken<List<BookingList?>?>() {}.type
-        val list: List<BookingList> = gson.fromJson(
-            sharedPreferences.getString(
-                Constant.DRONE,
-                ""
-            ), type
-        )
+        var list: List<BookingList> = ArrayList()
+        if (sharedPreferences.getString(
+                Constant.DRONE, ""
+            ).equals("")
+        ) {
+            list = ArrayList()
+        } else {
+            list = gson.fromJson(
+                sharedPreferences.getString(
+                    Constant.DRONE, ""
+                ), type
+            )
+        }
         val adapter = BookedListGridAdapter(this@BookedListActivity, list, this)
         rVGrid.setAdapter(adapter)
     }
