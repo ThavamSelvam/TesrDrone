@@ -32,6 +32,7 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
         binding =
             DataBindingUtil.setContentView(this@BookingActivity, R.layout.activity_booking)
         binding.viewModel = bookingViewModel
+        binding.activity=this
         val toolbar: Toolbar = findViewById(R.id.appbar)
         sharedPreferences = getSharedPreferences("appname", Context.MODE_PRIVATE)!!
         setSupportActionBar(toolbar)
@@ -61,8 +62,8 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
             saveToPref()
         }
         binding.consDateFrom.setOnClickListener {
-            isDateFromClicked = true
-            callDatePicker()
+
+           // callDatePicker()
         }
         binding.grpDateTo.setOnClickListener {
             isDateFromClicked = false
@@ -73,6 +74,7 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
     var isDateFromClicked = false
 
     fun callDatePicker() {
+        isDateFromClicked = true
         val now = Calendar.getInstance()
         DatePickerDialog.newInstance(
             this@BookingActivity,
@@ -137,12 +139,15 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
     override fun onDateSet(view: DatePickerDialog?, year: Int, monthOfYear: Int, dayOfMonth: Int) {
         date = "" + dayOfMonth + "/" + (monthOfYear + 1) + "/" + year
         val now = Calendar.getInstance()
-        TimePickerDialog.newInstance(
+      val tmePickerDialog= TimePickerDialog.newInstance(
             this@BookingActivity,
             now[Calendar.HOUR_OF_DAY],
             now[Calendar.MINUTE],
             false
-        ).show(supportFragmentManager, "time")
+        )
+         tmePickerDialog.setMinTime(6,0,0)
+         tmePickerDialog.setMaxTime(18,0,0)
+        tmePickerDialog .show(supportFragmentManager, "time")
     }
 
     override fun onTimeSet(view: TimePickerDialog?, hourOfDay: Int, minute: Int, second: Int) {

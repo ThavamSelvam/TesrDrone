@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="activity"
             type="com.project.dronedemo.view.booking.BookingActivity" />
@@ -81,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     android:textSize="@dimen/_13sdp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,27 +90,28 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/consDateFrom"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:onClick="@{() ->activity.callDatePicker()}"
             app:layout_constraintEnd_toEndOf="@+id/guideEnd"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@id/guideStart"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
             <androidx.constraintlayout.widget.Group
-                android:layout_width="match_parent"
-                app:constraint_referenced_ids="consDateFrom,imgDateFrom,tplDateFrom"
                 android:id="@+id/grpDateFrom"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="consDateFrom,imgDateFrom,tplDateFrom" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgDateFrom"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:onClick="@{() ->activity.callDatePicker()}"
                 android:padding="4dp"
                 android:src="@drawable/ic_baseline_date_range_24"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -123,6 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:hint="@string/date_from"
+                android:onClick="@{() ->activity.callDatePicker()}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgDateFrom"
                 app:layout_constraintTop_toTopOf="parent">
@@ -131,9 +134,12 @@
                     android:id="@+id/edtDateFrom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
                     android:maxLines="1"
+                    android:onClick="@{() ->activity.callDatePicker()}"
                     android:textSize="@dimen/_13sdp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -149,11 +155,12 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@id/guideStart"
             app:layout_constraintTop_toBottomOf="@+id/consDateFrom">
+
             <androidx.constraintlayout.widget.Group
-                android:layout_width="match_parent"
-                app:constraint_referenced_ids="imgDateTo,tplDateTo,consDateTo"
                 android:id="@+id/grpDateTo"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="imgDateTo,tplDateTo,consDateTo" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgDateTo"
@@ -182,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     android:textSize="@dimen/_13sdp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -226,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:maxLines="3"
                     android:textSize="@dimen/_13sdp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -271,7 +278,7 @@
                     android:inputType="numberSigned"
                     android:maxLines="1"
                     android:textSize="@dimen/_13sdp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

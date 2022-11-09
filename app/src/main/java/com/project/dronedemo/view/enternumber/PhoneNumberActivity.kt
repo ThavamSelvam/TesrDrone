@@ -40,9 +40,7 @@ class PhoneNumberActivity : BaseActivity(), PermissionHelper.PermissionCallback 
 
             override fun afterTextChanged(p0: Editable?) {
                 if (p0?.length == 10) {
-                    if (PermissionHelper.getInstance()!!.isAvailableAllPermission())
-                        phoneNumberViewModel.onNextClick()
-                    else askPermission()
+                    phoneNumberViewModel.onNextClick()
                 }
             }
         })
@@ -51,7 +49,7 @@ class PhoneNumberActivity : BaseActivity(), PermissionHelper.PermissionCallback 
 
     }
 
-      fun askPermission() {
+    fun askPermission() {
         PermissionHelper.getInstance()!!.with(this).setListener(this)
             .askPermission(Manifest.permission.SEND_SMS)
     }
@@ -68,18 +66,20 @@ class PhoneNumberActivity : BaseActivity(), PermissionHelper.PermissionCallback 
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        PermissionHelper.getInstance()?.onPermissionRequestResult(requestCode, permissions, grantResults)
+        PermissionHelper.getInstance()
+            ?.onPermissionRequestResult(requestCode, permissions, grantResults)
     }
+
     override fun onPermissionGranted() {
-     /*   startActivity(
-            Intent(
-                this@PhoneNumberActivity,
-                OtpVerificationActivity::class.java
-            ).putExtra(Constant.MOBILE_NUMBER, phoneNumberViewModel.phoneNumber.get()))*/
+        /*   startActivity(
+               Intent(
+                   this@PhoneNumberActivity,
+                   OtpVerificationActivity::class.java
+               ).putExtra(Constant.MOBILE_NUMBER, phoneNumberViewModel.phoneNumber.get()))*/
     }
 
     override fun onNeverAskAgainPermission(runtimePermissionDenied: Boolean) {
-          showBottomToast(getString(R.string.user_should_enable_sms_permission))
+        showBottomToast(getString(R.string.user_should_enable_sms_permission))
     }
 
     override fun onDenied() {
