@@ -54,6 +54,7 @@ class OtpVerificationActivity : BaseActivity(), OTPListener, OTPListenerSMS,
 
         startSmartUserConsent()
         sendSMS("0091" + userMobileNumber, "")
+        binding.ImgBackBtn.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
 
     private fun startSmartUserConsent() {

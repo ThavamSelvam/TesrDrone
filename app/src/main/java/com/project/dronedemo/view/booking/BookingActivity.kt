@@ -16,8 +16,8 @@ import com.project.dronedemo.utils.Constant
 import com.project.dronedemo.view.base.BaseActivity
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog
+import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
@@ -32,22 +32,22 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
         binding =
             DataBindingUtil.setContentView(this@BookingActivity, R.layout.activity_booking)
         binding.viewModel = bookingViewModel
-        binding.activity=this
+        binding.activity = this
         val toolbar: Toolbar = findViewById(R.id.appbar)
         sharedPreferences = getSharedPreferences("appname", Context.MODE_PRIVATE)!!
         setSupportActionBar(toolbar)
         loadLiveDataModel()
         bookingViewModel.setActivity(this);
         binding.btnSubmit.setOnClickListener {
-            if (binding.edtName.text.isNullOrEmpty() || binding.edtAddress.text!!.isBlank()) {
+            if (binding.edtName.text.isNullOrEmpty() || binding.edtName.text!!.isBlank()) {
                 binding.edtName.setError(getString(R.string.please_enter_user_name))
                 return@setOnClickListener
             }
-            if (binding.edtDateFrom.text.isNullOrEmpty() || binding.edtAddress.text!!.isBlank()) {
+            if (binding.edtDateFrom.text.isNullOrEmpty() || binding.edtDateFrom.text!!.isBlank()) {
                 binding.edtDateFrom.setError(getString(R.string.please_enter_date_from))
                 return@setOnClickListener
             }
-            if (binding.edtDateTo.text.isNullOrEmpty() || binding.edtAddress.text!!.isBlank()) {
+            if (binding.edtDateTo.text.isNullOrEmpty() || binding.edtDateTo.text!!.isBlank()) {
                 binding.edtDateTo.setError(getString(R.string.please_enter_date_to))
                 return@setOnClickListener
             }
@@ -55,7 +55,7 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
                 binding.edtAddress.setError(getString(R.string.please_enter_address))
                 return@setOnClickListener
             }
-            if (binding.edtAreaLength.text.isNullOrEmpty() || binding.edtAddress.text!!.isBlank()) {
+            if (binding.edtAreaLength.text.isNullOrEmpty() || binding.edtAreaLength.text!!.isBlank()) {
                 binding.edtAreaLength.setError(getString(R.string.please_enter_area))
                 return@setOnClickListener
             }
@@ -63,7 +63,7 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
         }
         binding.consDateFrom.setOnClickListener {
 
-           // callDatePicker()
+            // callDatePicker()
         }
         binding.grpDateTo.setOnClickListener {
             isDateFromClicked = false
@@ -76,13 +76,33 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
     fun callDatePicker() {
         isDateFromClicked = true
         val now = Calendar.getInstance()
-        DatePickerDialog.newInstance(
+        val datePickerDialog = DatePickerDialog.newInstance(
             this@BookingActivity,
-
             now[Calendar.YEAR],  // Initial year selection
             now[Calendar.MONTH],  // Initial month selection
             now[Calendar.DAY_OF_MONTH] // Inital day selection
-        ).show(supportFragmentManager, "dialog")
+        )
+        datePickerDialog.setMinDate(now)
+        datePickerDialog.show(supportFragmentManager, "dialog")
+    }
+
+    fun callDatePickerTo() {
+        if (dateFromStr.isNotEmpty()) {
+            isDateFromClicked = false
+            val now = Calendar.getInstance()
+            now.set(Calendar.DAY_OF_MONTH, dateFrom)
+            now.set(Calendar.MONTH, monthOfYearFrom)
+            now.set(Calendar.YEAR, yearFrom)
+            val datePickerDialog = DatePickerDialog.newInstance(
+                this@BookingActivity,
+
+                now[Calendar.YEAR],  // Initial year selection
+                now[Calendar.MONTH],  // Initial month selection
+                now[Calendar.DAY_OF_MONTH] // Inital day selection
+            )
+            datePickerDialog.setMinDate(now)
+            datePickerDialog.show(supportFragmentManager, "dialog")
+        }
     }
 
     private fun saveToPref() {
@@ -135,32 +155,69 @@ class BookingActivity : BaseActivity(), DatePickerDialog.OnDateSetListener,
         return super.onOptionsItemSelected(item)
     }
 
-    var date = ""
+    var dateFromStr = ""
+    var dateToStr = ""
+    var dateFrom = 0
+    var dateFromTo = 0
+    var monthOfYearFrom = 0
+    var yearFrom = 0
     override fun onDateSet(view: DatePickerDialog?, year: Int, monthOfYear: Int, dayOfMonth: Int) {
-        date = "" + dayOfMonth + "/" + (monthOfYear + 1) + "/" + year
-        val now = Calendar.getInstance()
-      val tmePickerDialog= TimePickerDialog.newInstance(
-            this@BookingActivity,
-            now[Calendar.HOUR_OF_DAY],
-            now[Calendar.MINUTE],
-            false
-        )
-         tmePickerDialog.setMinTime(6,0,0)
-         tmePickerDialog.setMaxTime(18,0,0)
-        tmePickerDialog .show(supportFragmentManager, "time")
+        if (isDateFromClicked) {
+            dateFrom = dayOfMonth
+            monthOfYearFrom = (monthOfYear)
+            yearFrom = year
+            dateFromStr = "" + dayOfMonth + "/" + (monthOfYear + 1) + "/" + year
+            val now = Calendar.getInstance()
+            val tmePickerDialog = TimePickerDialog.newInstance(
+                this@BookingActivity,
+                now[Calendar.HOUR_OF_DAY],
+                now[Calendar.MINUTE], false
+            )
+
+            tmePickerDialog.setMinTime(6, 0, 0)
+            tmePickerDialog.setMaxTime(18, 0, 0)
+            tmePickerDialog.show(supportFragmentManager, "time")
+        } else {
+            dateToStr = "" + dayOfMonth + "/" + (monthOfYear + 1) + "/" + year
+            val now = Calendar.getInstance()
+            val tmePickerDialog = TimePickerDialog.newInstance(
+                this@BookingActivity,
+                now[Calendar.HOUR_OF_DAY],
+                now[Calendar.MINUTE], false
+            )
+            if (dateFrom == dayOfMonth)
+                tmePickerDialog.setMinTime(hourOfDayFrom, minuteFrom, secondFrom)
+
+            tmePickerDialog.setMaxTime(18, 0, 0)
+            tmePickerDialog.show(supportFragmentManager, "time")
+        }
     }
 
+
+    var hourOfDayFrom = 0
+    var minuteFrom = 0
+    var secondFrom = 0
     override fun onTimeSet(view: TimePickerDialog?, hourOfDay: Int, minute: Int, second: Int) {
-        val hourString = if (hourOfDay < 10) "0$hourOfDay" else "" + hourOfDay
-        val minuteString = if (minute < 10) "0$minute" else "" + minute
-        val secondString = if (second < 10) "0$second" else "" + second
-        val time =
-            "" + hourString + "h" + minuteString + "m" + secondString + "s"
-        date + time;
-        if (isDateFromClicked)
-            binding.edtDateFrom.setText("" + date + time)
-        else binding.edtDateTo.setText("" + date + time)
+        if (isDateFromClicked) {
+            val c = Calendar.getInstance()
+            c[Calendar.HOUR_OF_DAY] = hourOfDay
+            c[Calendar.MINUTE] = minute
+            c[Calendar.SECOND] = second
+            val simpleDateFormat = SimpleDateFormat("KK:mm a")
+            val currentTime: String = simpleDateFormat.format(c.time)
+            hourOfDayFrom = hourOfDay
+            minuteFrom = minute
+            secondFrom = second
+            binding.edtDateFrom.setText(dateFromStr + " " + currentTime)
 
+        } else {
+            val c = Calendar.getInstance()
+            c[Calendar.HOUR_OF_DAY] = hourOfDay
+            c[Calendar.MINUTE] = minute
+            c[Calendar.SECOND] = second
+            val simpleDateFormat = SimpleDateFormat("KK:mm a")
+            val currentTime: String = simpleDateFormat.format(c.time)
+            binding.edtDateTo.setText(dateToStr + " " + currentTime)
+        }
     }
-
 }

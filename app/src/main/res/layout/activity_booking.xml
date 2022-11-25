@@ -149,6 +149,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/consDateTo"
             android:layout_width="0dp"
+            android:onClick="@{() ->activity.callDatePickerTo()}"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="@+id/guideEnd"
@@ -165,6 +166,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgDateTo"
                 android:layout_width="40dp"
+                android:onClick="@{() ->activity.callDatePickerTo()}"
                 android:layout_height="40dp"
                 android:padding="4dp"
                 android:src="@drawable/ic_baseline_date_range_24"
@@ -178,6 +180,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:onClick="@{() ->activity.callDatePickerTo()}"
                 android:hint="@string/date_to"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgDateTo"
@@ -188,7 +191,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
                     android:textSize="@dimen/_13sdp"
+                    android:onClick="@{() ->activity.callDatePickerTo()}"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>

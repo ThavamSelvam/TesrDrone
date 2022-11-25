@@ -30,6 +30,8 @@ class DashboardActivity : BaseActivity() {
         sharedPreferences =  getSharedPreferences("appname", Context.MODE_PRIVATE)!!
         val editor: SharedPreferences.Editor = sharedPreferences.edit()
         editor.putBoolean("USERLOGIN",true)
+        editor.apply()
+        editor.commit()
         val bottomBar: SuperBottomBar = findViewById(R.id.bottomBar)
          replaceFragment(0)
         bottomBar.setOnItemSelectListener(object : OnItemSelectedListener {
